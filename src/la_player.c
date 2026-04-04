@@ -53,7 +53,7 @@ la_stream *la_player_create(la_wav **wav) {
     return stream;
 }
 
-void la_player_destroy(la_stream *stream) {
+void la_player_free(la_stream *stream) {
     if (stream != NULL) {
         snd_pcm_close(stream->pcm);
         free(stream->buffer);

@@ -27,14 +27,14 @@ int main(void) {
     la_player_upload(s_stream, AMPLITUDE);
     la_player_drain(s_stream);
 
-    la_player_destroy(s_stream);
+    la_player_free(s_stream);
     la_wav_free(s_wav);
 
     return 0;
 }
 
 static void cleanup_exit(int signal) {
-    la_player_destroy(s_stream);
+    la_player_free(s_stream);
     la_wav_free(s_wav);
     printf("\nexiting...\n");
     exit(0);

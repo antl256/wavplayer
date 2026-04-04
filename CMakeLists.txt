@@ -10,4 +10,4 @@ add_executable(linux-audio
     "src/la_player.c"
 )
 
-target_link_libraries(linux-audio m asound)
+target_link_libraries(linux-audio asound)

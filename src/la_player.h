@@ -21,7 +21,7 @@ typedef struct la_stream {
 } la_stream;
 
 la_stream *la_player_create(la_wav **wav);
-void la_player_destroy(la_stream *stream);
+void la_player_free(la_stream *stream);
 void la_player_upload(la_stream *stream, float amplitude);
 void la_player_drain(la_stream *stream);
 
