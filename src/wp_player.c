@@ -1,4 +1,5 @@
 #include "wp_player.h"
+
 #include "wp_logging.h"
 #include "wp_wav.h"
 

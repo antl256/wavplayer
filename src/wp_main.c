@@ -3,8 +3,6 @@
 #include "wp_player.h"
 #include "wp_wav.h"
 
-#include <alsa/asoundlib.h>
-
 #include <signal.h>
 #include <stdio.h>
 #include <stdlib.h>
